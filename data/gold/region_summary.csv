@@ -1,0 +1,5 @@
+region,orders,revenue,revenue_share_pct,avg_monthly_revenue_first6,avg_monthly_revenue_last6,growth_first6_to_last6_pct
+West,14401,2364854.84,28.52,70351.84,124823.72,77.43
+South,15294,2476655.21,29.87,96464.14,106162.58,10.05
+Northeast,11462,1878123.15,22.65,76241.03,79150.26,3.82
+Midwest,9749,1571460.22,18.95,66711.33,65302.02,-2.11

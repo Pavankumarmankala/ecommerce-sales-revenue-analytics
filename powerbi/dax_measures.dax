@@ -1,0 +1,38 @@
+// DAX measures for orders
+
+Total Revenue = SUM ( orders[revenue] )
+
+Total Profit = SUM ( orders[profit] )
+
+Profit Margin % =
+DIVIDE ( [Total Profit], [Total Revenue] ) * 100
+
+Total Orders = COUNTROWS ( orders )
+
+AOV = DIVIDE ( [Total Revenue], [Total Orders] )
+
+Units Sold = SUM ( orders[quantity] )
+
+Avg Discount % = AVERAGE ( orders[discount_pct] ) * 100
+
+Revenue MoM % =
+VAR CurrentMonthRevenue = [Total Revenue]
+VAR PriorMonthRevenue =
+    CALCULATE ( [Total Revenue], DATEADD ( 'Calendar'[Date], -1, MONTH ) )
+RETURN
+    DIVIDE ( CurrentMonthRevenue - PriorMonthRevenue, PriorMonthRevenue ) * 100
+
+Premium Revenue Share % =
+DIVIDE (
+    CALCULATE ( [Total Revenue], orders[customer_segment] = "Premium" ),
+    [Total Revenue]
+) * 100
+
+Revenue at Negative Margin Products =
+CALCULATE (
+    [Total Revenue],
+    FILTER (
+        VALUES ( orders[product] ),
+        CALCULATE ( [Total Profit] ) < 0
+    )
+)

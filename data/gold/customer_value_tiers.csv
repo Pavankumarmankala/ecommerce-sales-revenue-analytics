@@ -1,0 +1,5 @@
+tier,customers,revenue,avg_orders,avg_recency_days,revenue_share_pct
+Bronze,2784,345084.77,1.64,283.8,4.16
+Silver,2783,931642.57,2.98,184.5,11.24
+Gold,2783,1753856.98,4.51,129.6,21.15
+Platinum,2783,5260509.1,9.16,74.9,63.45

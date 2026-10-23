@@ -1,0 +1,25 @@
+product,category,orders,units,revenue,profit,avg_discount_pct,margin_pct
+Plush Toy,Toys,1385,2801,52983.45,27774.45,5.6,52.42
+Vitamin C Serum,Beauty,1693,3364,126881.62,62292.82,5.6,49.1
+Insulated Water Bottle,Sports,1833,3649,86053.41,40477.4,5.6,47.04
+Scented Candle Set,Home & Kitchen,1985,3876,128573.07,58068.63,5.3,45.16
+Graphic T-Shirt,Apparel,2628,5315,150677.49,63033.14,5.6,41.83
+Skincare Gift Set,Beauty,1656,3313,313658.8,128163.93,5.2,40.86
+Yoga Leggings,Apparel,2548,5076,287981.89,111387.85,5.4,38.68
+Board Game,Toys,1452,3008,128361.9,47175.98,5.4,36.75
+Denim Jacket,Apparel,2563,5022,380217.01,139211.23,5.4,36.61
+Laptop Stand,Electronics,3295,6720,318183.57,109930.77,5.3,34.55
+Building Block Set,Toys,1401,2811,159728.72,53501.03,5.3,33.49
+Running Shoes,Apparel,2582,5110,532146.54,172453.64,5.4,32.41
+Ceramic Dinnerware Set,Home & Kitchen,2000,4061,269145.39,81567.8,5.5,30.31
+Electric Toothbrush,Beauty,1702,3330,235884.57,68585.37,5.5,29.08
+Wireless Headphones,Electronics,3319,6695,821875.89,230104.84,5.4,28.0
+Camping Tent,Sports,1792,3680,557283.42,151048.22,5.6,27.1
+RC Car,Toys,1411,2851,216244.64,56617.15,5.3,26.18
+Smart Speaker,Electronics,3313,6700,571557.02,149524.02,5.3,26.16
+Adjustable Dumbbells,Sports,1761,3492,658964.49,149167.41,5.4,22.64
+Air Fryer,Home & Kitchen,1865,3696,487951.9,105083.26,5.5,21.54
+Robot Vacuum,Home & Kitchen,1847,3762,885825.92,152273.54,5.7,17.19
+Hair Dryer,Beauty,1686,3384,193076.46,-20081.7,36.6,-10.4
+Mechanical Keyboard,Electronics,3365,6669,505749.82,-70385.09,37.0,-13.92
+Fitness Tracker,Sports,1824,3578,222086.43,-31915.79,37.8,-14.37

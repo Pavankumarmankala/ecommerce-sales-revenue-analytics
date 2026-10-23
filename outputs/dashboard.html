@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<title>E-Commerce Sales &amp; Revenue Analytics</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f7f7f9}
+.card{display:inline-block;background:#fff;border:1px solid #ddd;border-radius:8px;
+padding:12px 16px;margin:6px;min-width:170px} img{max-width:100%;background:#fff;
+border:1px solid #ddd;border-radius:8px;margin:8px 0}</style></head><body>
+<h1>E-Commerce Sales &amp; Revenue Analytics</h1><div class='card'><h3>Orders</h3><p>50906</p></div><div class='card'><h3>Customers</h3><p>11133</p></div><div class='card'><h3>Months Covered</h3><p>24</p></div><div class='card'><h3>Total Revenue</h3><p>8291093.42</p></div><div class='card'><h3>Total Profit</h3><p>2035059.9</p></div><div class='card'><h3>Overall Margin Pct</h3><p>24.55</p></div><div class='card'><h3>Avg Order Value</h3><p>162.87</p></div><div class='card'><h3>First Month Revenue</h3><p>286339.29</p></div><div class='card'><h3>Last Month Revenue</h3><p>456708.96</p></div><div class='card'><h3>Peak Month</h3><p>2025-12</p></div><div class='card'><h3>Peak Month Revenue</h3><p>456708.96</p></div><div class='card'><h3>Declining Category</h3><p>Home & Kitchen</p></div><div class='card'><h3>Declining Category Change Pct</h3><p>-36.81</p></div><div class='card'><h3>Declining Category Avg Monthly Prior6</h3><p>79001.46</p></div><div class='card'><h3>Declining Category Avg Monthly Last6</h3><p>49920.03</p></div><div class='card'><h3>Most Profitable Product</h3><p>Plush Toy</p></div><div class='card'><h3>Most Profitable Margin Pct</h3><p>52.42</p></div><div class='card'><h3>Least Profitable Product</h3><p>Fitness Tracker</p></div><div class='card'><h3>Least Profitable Margin Pct</h3><p>-14.37</p></div><div class='card'><h3>Negative Margin Products</h3><p>3</p></div><div class='card'><h3>Negative Margin Products Profit</h3><p>-122382.58</p></div><div class='card'><h3>Margin Pct No Discount</h3><p>33.07</p></div><div class='card'><h3>Margin Pct Over 30 Discount</h3><p>-29.72</p></div><div class='card'><h3>Fastest Growing Region</h3><p>West</p></div><div class='card'><h3>Region Growth First6 To Last6 Pct</h3><p>77.43</p></div><div class='card'><h3>Premium Customer Share Pct</h3><p>8.55</p></div><div class='card'><h3>Premium Revenue Share Pct</h3><p>37.12</p></div><div class='card'><h3>Premium Aov</h3><p>228.96</p></div><div class='card'><h3>Platinum Tier Revenue Share Pct</h3><p>63.45</p></div><div class='card'><h3>Repeat Rate Pct</h3><p>85.47</p></div><div class='card'><h3>Pipeline Runtime Seconds</h3><p>1.64</p></div>
+<h2>Monthly revenue</h2><img src='charts/monthly_revenue_trend.png'>
+<h2>Category trend</h2><img src='charts/category_trend.png'>
+<h2>Product margin</h2><img src='charts/product_margin.png'>
+<h2>Discount band vs margin</h2><img src='charts/discount_band_margin.png'>
+<h2>Region growth</h2><img src='charts/region_growth.png'>
+<h2>Findings</h2><pre style='white-space:pre-wrap;background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px'># Findings — E-Commerce Sales & Revenue Analytics
+
+Dataset: 50,906 orders, 11,133 customers, 24 months (Jan 2024 – Dec 2025). Total revenue $8,291,093.42, total profit $2,035,059.90 (24.55% margin), AOV $162.87.
+
+## 1. Revenue trend
+- Revenue grew from $286,339 in the first month to $456,709 in the last month; peak month was 2025-12 at $456,709 (holiday seasonality).
+- Steepest category decline: **Home & Kitchen**, down **36.81%** comparing average monthly revenue in the last 6 months ($49,920) vs the prior 6 months ($79,001). This matches planted pattern #1.
+
+## 2. Product profitability
+- Most profitable: **Plush Toy** at 52.42% margin. Least profitable: **Fitness Tracker** at -14.37%.
+- 3 products have negative overall margins; together they lost $122,383. All are heavy-discount promo products (planted pattern #3).
+- Discount tradeoff: orders with no discount earn 33.07% margin; orders discounted >30% earn -29.72% — deep discounts destroy margin.
+
+## 3. Customers & regions
+- Premium customers are 8.55% of customers but drive 37.12% of revenue (AOV $229) — planted pattern #4, verified.
+- Top value tier (Platinum, top spend quartile) accounts for 63.45% of revenue. Repeat rate: 85.47% of customers ordered 2+ times.
+- Fastest-growing region: **West**, revenue up 77.43% (avg monthly, first 6 vs last 6 months) — planted pattern #2, verified.
+
+## 4. Revenue opportunities (each tied to a computed number)
+1. **Cap discounts at 20% on negative-margin promo products (Hair Dryer, Mechanical Keyboard, Fitness Tracker)** — These products lost $122,383 over 24 months at current 35-55% promo discounts. Computed impact: **$249,168** (profit recoverable over 24 months if discount capped at 20%, same volumes).
+2. **Reverse the Home & Kitchen decline (-36.81% last 6 vs prior 6 months)** — Average monthly revenue fell from $79,001 to $49,920. Computed impact: **$348,977** (annual revenue recoverable at the prior-6-month run rate).
+3. **Lift Occasional-segment basket size toward the Regular-segment AOV (bundles, free-shipping threshold, second-item offers)** — Occasional AOV is $113.81 vs Regular $145.63 across 7,616 Occasional orders. Computed impact: **$242,341** (revenue upside over 24 months if Occasional AOV matched Regular AOV).
+</pre></body></html>

@@ -1,0 +1,4 @@
+customer_segment,customers,orders,revenue,profit,aov,orders_per_customer,customer_share_pct,revenue_share_pct
+Regular,6682,29847,4346478.25,1067652.83,145.63,4.47,60.02,52.42
+Premium,952,13443,3077867.82,754895.52,228.96,14.12,8.55,37.12
+Occasional,3499,7616,866747.35,212511.55,113.81,2.18,31.43,10.45
